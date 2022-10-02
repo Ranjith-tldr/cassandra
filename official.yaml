@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: cassandra-svc
 spec:
+  clusterIP: None
   selector:
     app: cassandra
     statefulset.kubernetes.io/pod-name: cassandra-0
